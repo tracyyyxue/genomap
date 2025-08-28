@@ -5,7 +5,8 @@ def main():
     import scipy
     import genomap as gp
 
-    data = pd.read_csv('./data/TM_data.csv', header=None)
+    data = pd.read_csv('./data/TM_data.csv', header=None,
+                    delim_whitespace=False)
     colNum=33 # Column number of genomap
     rowNum=33 # Row number of genomap
 
